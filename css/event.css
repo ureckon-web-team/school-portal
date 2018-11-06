@@ -1,0 +1,264 @@
+
+body{
+  width:100%;
+  height: 100%;
+  background-color: #bdbdbd;
+}
+.content1 ,.content2 ,.content3
+{
+  width:26%;
+  float:left;
+  margin-left: 5%;
+  padding-top:5vh;
+  animation-name:slidein;
+}
+@-webkit-keyframes slidein
+{
+  from {
+				margin-left: 100%;
+			}
+
+		to {
+				margin-left: 5%;
+			}
+}
+.card{
+    height:60%;
+    margin-left: 5%;
+    background-color: #73008B;
+    border:1px solid #bdbdbd;
+    -webkit-border-radius: 5px;
+    border-radius: 25px;
+    -moz-box-shadow: 0 0 20px #73008B;
+    -webkit-box-shadow: 0 0 20px #73008B;
+    box-shadow: 0 0 20px #73008B;
+}
+h1{
+  text-align: center;
+  color:white;
+    text-decoration: underline;
+    font-family:sans-serif;
+}
+ .circle {
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   margin-top:0;
+   margin-left: 38%;
+   background-color:transparent;
+   cursor: pointer;
+   padding:0;
+ }
+.circle:hover
+{
+  background-color:rgba(41, 10, 99, 1);
+  -webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+ .horizontal-plus {
+   position: relative;
+   background-color: rgba(128, 237, 255, 1);
+   width: 50%;
+   height: 12.5%;
+   left: 25%;
+   top: 43.75%;
+ }
+
+ .vertical-plus {
+   position: relative;
+   background-color: rgba(128, 237, 255, 1);
+   width: 12.5%;
+   height: 50%;
+   left: 43.75%;
+   top: 12.5%;
+ }
+
+  img{
+    width:150px;
+    height:150px;
+    margin-top:-3vh;
+    margin-right:100%;
+  }
+  nav
+  {
+    height: 12vh;
+    width:100%;
+    background-color: rgba(41, 10, 99, 1);
+  }
+  ul{
+    width:80%;
+    margin-top:-11.5%;
+    padding:0;
+    float:right;
+  }
+  ul li{
+    list-style: none;
+    display:inline-block;
+    padding:20px;
+    float:right;
+    margin-right: 2vh;
+    font-style: oblique;
+    font-size:20px;
+  }
+  ul li:hover
+  {
+    background-color: rgba(128, 237, 255, 1);
+    border-radius: 15px;
+  }
+  ul li a
+  {
+    color:white;
+    text-decoration: none;
+  }
+  ul li a:hover
+    {
+      color:black;
+      text-decoration: bold;
+    }
+  #content
+  {
+    padding-left: 3%;
+    padding-right:2%;
+	  text-align: left;
+    color:white;
+    line-height: 5vh;
+    font-family:cursive;
+  }
+/*Responsive view*/
+
+  @media (max-width: 1300px)
+   {
+     .content1 ,.content2 ,.content3
+     {
+       width:100%;
+       float:left;
+     }
+     .card
+     {
+       margin-right: 10%;
+     }
+     #content{
+       font-size: 35px;
+     }
+
+   }
+  /* X-Small devices (landscape phones, 320px and up) */
+        @media (min-width: 320px)
+         {
+           #content{
+             font-size: 11px;
+           }
+            .circle
+            {
+              margin-left:42%;
+              margin-top: 0.9%;
+            }
+            img{
+              width:150px;
+              height:150px;
+              margin-top:-6vh;
+              margin-right:95%;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px)
+        {
+          .circle
+          {
+            margin-top:0;
+          }
+          #content{
+            font-size: 20px;
+          }
+          img{
+            width:220px;
+            height:220px;
+            margin-top:-7vh;
+            margin-right:95%;
+          }
+
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px)
+         {
+           .circle
+           {
+             margin-top:0;
+           }
+           #content{
+             font-size: 28px;
+             line-height: 5.6vh;
+           }
+           img{
+             width:200px;
+             height:200px;
+             margin-top:-6vh;
+             margin-right:95%;
+           }
+
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 991px)
+           {
+             .circle
+             {
+               margin-top:1%;
+             }
+             #content{
+               font-size:15px;
+               line-height: 5.7vh;
+             }
+             img{
+               width:280px;
+               height:280px;
+               margin-top:-13vh;
+               margin-right:20%;
+             }
+           }
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px)
+         {
+           .circle
+           {
+             margin-top:1%;
+           }
+           #content{
+             font-size:18px;
+             line-height: 5.2vh;
+           }
+           img{
+             width:280px;
+             height:280px;
+             margin-top:-13vh;
+             margin-right:20%;
+           }
+        }
+
+        /* Ultra large devices (large desktops, 1400px and up) */
+        @media (min-width: 1500px)
+         {
+           .circle
+           {
+             margin-top:10%;
+           }
+           img{
+             width:280px;
+             height:280px;
+             margin-top:-12vh;
+             margin-right:20%;
+           }
+           #content{
+             font-size:15px;
+             line-height: 5.2vh;
+           }
+        }
