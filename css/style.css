@@ -28,7 +28,7 @@ body{
     background-color: #73008B;
     border:1px solid #bdbdbd;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 25px;
     -moz-box-shadow: 0 0 20px #73008B;
     -webkit-box-shadow: 0 0 20px #73008B;
     box-shadow: 0 0 20px #73008B;
@@ -45,7 +45,7 @@ h1:hover{
    border-radius: 50%;
    width: 60px;
    height: 60px;
-   margin-top:85%;
+   margin-top:0;
    margin-left: 38%;
    background-color:#73008B;
    cursor: pointer;
@@ -94,6 +94,14 @@ h1:hover{
     width:100%;
     background-color: rgba(41, 10, 99, 1);
   }
+  #content
+  {
+    padding-left: 3%;
+    padding-right:2%;
+	  text-align: left;
+    color:white;
+    line-height: 5vh;
+  }
 /*Responsive view*/
 
   @media (max-width: 767px)
@@ -107,25 +115,38 @@ h1:hover{
      {
        margin-right: 10%;
      }
+     #content{
+       font-size: 30px;
+     }
 
    }
   /* X-Small devices (landscape phones, 320px and up) */
         @media (min-width: 320px)
          {
+           #content{
+             font-size: 12px;
+           }
             .circle
             {
               margin-left:42%;
-              margin-top: 57%;
+              margin-top: 2%;
+            }
+            img{
+              width:150px;
+              height:150px;
+              margin-top:-7vh;
+              margin-right:95%;
             }
         }
 
         /* Small devices (landscape phones, 576px and up) */
         @media (min-width: 576px)
         {
-            .circle
-            {
-              margin-top:43%;
-            }
+          .circle
+          {
+            margin-top:8%;
+          }
+
         }
 
         /* Medium devices (tablets, 768px and up) */
@@ -159,6 +180,6 @@ h1:hover{
          {
            .circle
            {
-             margin-top:80%;
+             margin-top:10%;
            }
         }
