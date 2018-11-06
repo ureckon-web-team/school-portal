@@ -1,0 +1,158 @@
+
+body{
+  width:100%;
+  height: 100%;
+  background-color: #bdbdbd;
+}
+.content1 ,.content2 ,.content3
+{
+  width:26%;
+  float:left;
+  margin-left: 5%;
+  padding-top:5vh;
+  animation-name:slidein;
+}
+@-webkit-keyframes slidein
+{
+  from {
+				margin-left: 100%;
+			}
+
+		to {
+				margin-left: 5%;
+			}
+}
+.card{
+    height:60%;
+    margin-left: 5%;
+    background-color: #73008B;
+    border:1px solid #bdbdbd;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 20px #73008B;
+    -webkit-box-shadow: 0 0 20px #73008B;
+    box-shadow: 0 0 20px #73008B;
+}
+h1{
+  text-align: center;
+  color:white;
+}
+h1:hover{
+  text-decoration: underline;
+}
+ .circle {
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   margin-top:85%;
+   margin-left: 38%;
+   background-color:#73008B;
+   cursor: pointer;
+ }
+.circle:hover
+{
+  background-color:rgba(41, 10, 99, 1);
+  -webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+ .horizontal-plus {
+   position: relative;
+   background-color: #FFFFFF;
+   width: 50%;
+   height: 12.5%;
+   left: 25%;
+   top: 43.75%;
+ }
+ .vertical-plus {
+   position: relative;
+   background-color: #FFFFFF;
+   width: 12.5%;
+   height: 50%;
+   left: 43.75%;
+   top: 12.5%;
+ }
+
+ @media (max-width: 767px)
+  {
+    .content1 ,.content2 ,.content3
+    {
+      width:100%;
+      float:left;
+    }
+    .card
+    {
+      margin-right: 10%;
+    }
+
+  }
+  img{
+    width:150px;
+    height:150px;
+    margin-top:-3vh;
+    margin-right:100%;
+  }
+  nav
+  {
+    height: 12vh;
+    width:100%;
+    background-color: rgba(41, 10, 99, 1);
+  }
+  /* X-Small devices (landscape phones, 320px and up) */
+        @media (min-width: 320px)
+         {
+            .circle
+            {
+              margin-left:42%;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px)
+        {
+            .circle
+            {
+              margin-top:63%;
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px)
+         {
+           .circle
+           {
+             margin-top:165%;
+           }
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px)
+           {
+             .circle
+             {
+               margin-top:135%;
+             }
+           }
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px)
+         {
+           .circle
+           {
+             margin-top:110%;
+           }
+        }
+
+        /* Ultra large devices (large desktops, 1400px and up) */
+        @media (min-width: 1500px)
+         {
+           .circle
+           {
+             margin-top:80%;
+           }
+        }
