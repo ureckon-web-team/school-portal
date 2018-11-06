@@ -39,6 +39,7 @@ h1{
 }
 h1:hover{
   text-decoration: underline;
+  color:rgba(128, 237, 255, 1);
 }
  .circle {
    border-radius: 50%;
@@ -48,6 +49,7 @@ h1:hover{
    margin-left: 38%;
    background-color:#73008B;
    cursor: pointer;
+   padding:0;
  }
 .circle:hover
 {
@@ -64,34 +66,22 @@ h1:hover{
 }
  .horizontal-plus {
    position: relative;
-   background-color: #FFFFFF;
+   background-color: rgba(128, 237, 255, 1);
    width: 50%;
    height: 12.5%;
    left: 25%;
    top: 43.75%;
  }
+
  .vertical-plus {
    position: relative;
-   background-color: #FFFFFF;
+   background-color: rgba(128, 237, 255, 1);
    width: 12.5%;
    height: 50%;
    left: 43.75%;
    top: 12.5%;
  }
 
- @media (max-width: 767px)
-  {
-    .content1 ,.content2 ,.content3
-    {
-      width:100%;
-      float:left;
-    }
-    .card
-    {
-      margin-right: 10%;
-    }
-
-  }
   img{
     width:150px;
     height:150px;
@@ -104,12 +94,28 @@ h1:hover{
     width:100%;
     background-color: rgba(41, 10, 99, 1);
   }
+/*Responsive view*/
+
+  @media (max-width: 767px)
+   {
+     .content1 ,.content2 ,.content3
+     {
+       width:100%;
+       float:left;
+     }
+     .card
+     {
+       margin-right: 10%;
+     }
+
+   }
   /* X-Small devices (landscape phones, 320px and up) */
         @media (min-width: 320px)
          {
             .circle
             {
               margin-left:42%;
+              margin-top: 57%;
             }
         }
 
@@ -118,25 +124,25 @@ h1:hover{
         {
             .circle
             {
-              margin-top:63%;
+              margin-top:43%;
             }
         }
 
         /* Medium devices (tablets, 768px and up) */
-        @media (min-width: 768px)
+        @media (min-width: 767px)
          {
            .circle
            {
-             margin-top:165%;
+             margin-top:105%;
            }
         }
 
         /* Large devices (desktops, 992px and up) */
-        @media (min-width: 992px)
+        @media (min-width: 991px)
            {
              .circle
              {
-               margin-top:135%;
+               margin-top:90%;
              }
            }
         /* Extra large devices (large desktops, 1200px and up) */
@@ -144,7 +150,7 @@ h1:hover{
          {
            .circle
            {
-             margin-top:110%;
+             margin-top:80%;
            }
         }
 
