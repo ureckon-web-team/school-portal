@@ -13,6 +13,7 @@ function fixed() {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
         header.innerHTML = "UOSC";
+        document.getElementById("myP").style.visibility = "hidden";
     } else {
         header.classList.remove("sticky");
         header.innerHTML = "Ureckon Open School Challenge (UOSC)";
