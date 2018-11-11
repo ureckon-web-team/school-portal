@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>URECKON School Portal</title>
+    <link rel="icon" href="image/fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exibition.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+        <img src="logo_with_wordmark_sky.svg">
+
+        <ul>
+          <li>  <a href="reg.html">Register</a> </li>
+          <li>  <a href="contact.html">Contact Us</a> </li>
+          <li>  <a href="event.html">Events</a> </li>
+          <li>  <a href="index.html">Home</a> </li>
+        </ul>
+  </nav>
+  <span id = "bar" onclick="openNav()">&#9776;</span>
+  <div class="content">
+        <div class="slide">
+            <img name="slide" id="slide" width="300" height="250">
+        </div>
+  </div>
+  <script>
+  var i = 0; // Start point
+			var images = [];
+			var time = 3000;
+
+			// Image List
+			  images[0] = 'URECKON_18/6.jpg';
+			  images[1] = 'URECKON_18/2.jpg';
+			  images[2] = 'URECKON_18/3.jpg';
+			  images[3] = 'URECKON_18/7.jpg';
+			  images[4] = 'URECKON_18/8.jpg';
+			  images[5] = 'URECKON_18/9.jpg';
+			  images[6] = 'URECKON_18/10.jpg';
+			  images[6] = 'URECKON_18/11.jpg';
+			  images[7] = 'URECKON_18/12.jpg';
+			  images[8] = 'URECKON_18/4.jpg';
+			  images[9] = 'URECKON_18/5.jpg';
+
+			// Change Image
+			function changeImg(){
+				document.slide.src = images[i];
+
+				if(i < images.length - 1){
+					i++;
+				} else {
+					i = 0;
+				}
+
+				setTimeout("changeImg()", time);
+			}
+
+			window.onload = changeImg;
+</script>
+</body>
+</html>

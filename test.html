@@ -20,7 +20,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">Home</a>
             <a href="event.html">Events</a>
-            <a href="exibition.html">Exibition</a>
+            <a href="event.html">Exibition</a>
             <a href="reg.html">Register</a>
             <a href="#">Contact Us</a>
           </div>
@@ -37,7 +37,7 @@
                  You make one prototype model to showcase and present your idea in front of the tech-world.</h3>
             </div>
             <div class="slider">
-
+              
             </div>
                 <div class="logo">
                   <img id="logo" src="image/UEM.png" alt="">
@@ -51,6 +51,38 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
             window.onscroll = function() {fixed()};
+			var i = 0; // Start point
+			var images = [];
+			var time = 3000;
+
+			// Image List
+			  images[0] = '6.jpg';
+			  images[1] = '2.jpg';                                                                      
+			  images[2] = '3.jpg';
+			  images[3] = '7.jpg';
+			  images[4] = '8.jpg';
+			  images[5] = '9.jpg';
+			  images[6] = '10.jpg';
+			  images[6] = '11.jpg';
+			  images[7] = '12.jpg';
+			  images[8] = '4.jpg';
+			  images[9] = '5.jpg';
+	
+			// Change Image
+			function changeImg(){
+				document.slide.src = images[i];
+
+				if(i < images.length - 1){
+					i++;
+				} else {
+					i = 0;
+				}
+
+				setTimeout("changeImg()", time);
+			}
+
+			window.onload = changeImg;
+
         </script>
     </body>
 </html>
