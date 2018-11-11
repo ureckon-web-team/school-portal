@@ -7,13 +7,14 @@ function closeNav() {
 }
 
 
-            var header = document.getElementById("header");
-            var sticky = header.offsetTop;
-
-            function fixed() {
-            if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            } else {
-            header.classList.remove("sticky");
-            }
-            }
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+function fixed() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        header.innerHTML = "UOSC";
+    } else {
+        header.classList.remove("sticky");
+        header.innerHTML = "Ureckon Open School Challenge (UOSC)";
+    }
+}
