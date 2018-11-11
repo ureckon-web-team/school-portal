@@ -17,5 +17,6 @@ function fixed() {
     } else {
         header.classList.remove("sticky");
         header.innerHTML = "Ureckon Open School Challenge (UOSC)";
+        document.getElementById("myP").style.visibility = "visible";
     }
 }
