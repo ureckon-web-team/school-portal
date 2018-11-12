@@ -5,6 +5,7 @@ body
   width: 100vw;
   height:140vh;
   overflow-x: hidden;
+  background-color:rgba(41, 10, 99, 1);
 }
 /*particle.js background*/
 #atom{
@@ -22,7 +23,7 @@ body
 /* top left logo */
 .side_logo{ 
   margin: 0;
-  width:10%;
+  width:15%;
   height:10%;
   top:3%;
   left: 2%;
@@ -32,12 +33,13 @@ body
 
 /*on click side nav*/
 #bar{
-  font-size:2rem;
+  font-size:3em;
   cursor:pointer;
   color: rgba(128, 237, 255, 1);
   position:fixed;
   right:2%;
   top: 5px;
+  padding:1%;
   z-index: 2;
 }
 #bar:hover{
@@ -211,5 +213,13 @@ body
   }
   .container h3{
     font-size: 14px;
+  }
+  .header
+  {
+	  font-size : 1px;
+}
+.side_logo{
+	width:8%;
+	height:5%;
   }
 }
