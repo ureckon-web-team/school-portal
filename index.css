@@ -214,4 +214,12 @@ body
   .container h3{
     font-size: 14px;
   }
+  .header
+  {
+	  font-size : 1px;
+}
+.side_logo{
+	width:8%;
+	height:5%;
+  }
 }
