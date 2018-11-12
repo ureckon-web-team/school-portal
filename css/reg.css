@@ -1,3 +1,20 @@
+.logo{
+  letter-spacing: 2px;
+position:absolute;
+top:0;
+height: 15%;
+left: 31%;
+width: 35%;
+text-align: center;
+display: flex;
+align-content: center;
+justify-content: center;
+flex-direction: column;
+z-index: 1;
+position: absolute;
+background-color: rgba(41, 10, 99, 1);
+border
+}
 
 /*
    #FONT
@@ -362,6 +379,7 @@ h6 {
                                                                               */
 .wrapper {
   margin: 0 auto;
+  margin-top: 10vh;
 }
 
 .wrapper--w960 {

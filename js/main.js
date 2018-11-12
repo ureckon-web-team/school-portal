@@ -12,7 +12,7 @@ var sticky = header.offsetTop;
 function fixed() {
     if (window.pageYOffset >=sticky) {
         header.classList.add("sticky");
-        header.innerHTML = "UOSC <br> (11-12 Jan 2019)";
+        header.innerHTML = "UOSC <br>(11-12 Jan 2019)";
         document.getElementById("main").style.visibility = "hidden";
 		document.getElementById("side").style.visibility = "visible";
     } else {

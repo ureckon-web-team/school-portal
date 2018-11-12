@@ -21,6 +21,7 @@
 </head>
 
 <body>
+  <img src="image/Asset 84.png" class="logo">
     <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
@@ -57,7 +58,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">School Nmae</div>
+                            <div class="name">School Name</div>
                             <div class="value">
                                 <div class="input-group">
                                     <input class="input--style-5" type="text" name="company">
@@ -70,7 +71,7 @@
                                 <div class="row row-refine">
                                     <div class="col-3">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="area_code">
+                                            <input class="input--style-5" id="myText" type="text" placeholder="+91" name="area_code">
                                             <label class="label--desc">Area Code</label>
                                         </div>
                                     </div>
@@ -135,7 +136,10 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
-
+<script>
+document.getElementById("myText").innerHTML = "+91";
+document.getElementById("myText").disabled = true;
+</script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
