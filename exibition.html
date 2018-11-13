@@ -5,56 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/exibition.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
-<body>
-  <nav>
-        <img src="logo_with_wordmark_sky.svg">
-
-        <ul>
-          <li>  <a href="reg.html">Register</a> </li>
-          <li>  <a href="contact.html">Contact Us</a> </li>
-          <li>  <a href="event.html">Events</a> </li>
-          <li>  <a href="index.html">Home</a> </li>
-        </ul>
-  </nav>
-  <span id = "bar" onclick="openNav()">&#9776;</span>
-  <div class="content">
-        <div class="slide">
-            <img name="slide" id="slide" width="300" height="250">
+<body onload="changeImg1(); changeImg2();">
+    <nav>
+        <img id="logo" src="image/logo_with_watermark_year_sky.svg">
+    </nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home</a>
+          <a href="event.html">Events</a>
+          <a href="reg.html">Register</a>
+          <a href="#">Exibition</a>
+      <a href="#">Contact Us</a>
         </div>
-  </div>
-  <script>
+      <span id = "bar" onclick="openNav()">&#9776;</span>
+            <img name="slide1" id="slide1">
+        <div class="card1">
+                <h1>CONVOCATION</h1>
+                <span id="text">
+                        kjfgweiofgbwe;oui
+                </span>
+        </div>
+
+        <div class="card2">
+                <h1>Robo Events</h1>
+                <span id="text">
+                  jfweh89 56585 96+365* /9595 956 3956kn ujhngyfv rtdhjnn bkjhyrd ytgblkj
+                    pjkfew poo;ui  fgehwr fjweroj
+                </span>
+        </div>
+                <img name="slide2" id="slide2">
+<script>
   var i = 0; // Start point
-			var images = [];
+  var j = 0;
+			var images1 = [];
+      var images2 = [];
 			var time = 3000;
 
 			// Image List
-			  images[0] = 'URECKON_18/6.jpg';
-			  images[1] = 'URECKON_18/2.jpg';
-			  images[2] = 'URECKON_18/3.jpg';
-			  images[3] = 'URECKON_18/7.jpg';
-			  images[4] = 'URECKON_18/8.jpg';
-			  images[5] = 'URECKON_18/9.jpg';
-			  images[6] = 'URECKON_18/10.jpg';
-			  images[6] = 'URECKON_18/11.jpg';
-			  images[7] = 'URECKON_18/12.jpg';
-			  images[8] = 'URECKON_18/4.jpg';
-			  images[9] = 'URECKON_18/5.jpg';
+			  images1[0] = 'URECKON_18/2.jpg';
+			  images1[1] = 'URECKON_18/3.jpg';
+			  images1[2] = 'URECKON_18/4.jpg';
+			  images1[3] = 'URECKON_18/5.jpg';
+			  images1[4] = 'URECKON_18/6.jpg';
+			  images1[5] = 'URECKON_18/7.jpg';
+			  images1[6] = 'URECKON_18/8.jpg';
+			  images1[7] = 'URECKON_18/9.jpg';
+			  images1[8] = 'URECKON_18/10.jpg';
+			  images1[9] = 'URECKON_18/11.jpg';
+        images1[10] = 'URECKON_18/12.jpg';
 
+        images2[0] = 'URECKON_18/14.jpg';
+			  images2[1] = 'URECKON_18/15.jpg';
+			  images2[2] = 'URECKON_18/16.jpg';
+			  images2[3] = 'URECKON_18/17.jpg';
+			  images2[4] = 'URECKON_18/18.jpg';
+			  images2[5] = 'URECKON_18/19.jpg';
+			  images2[6] = 'URECKON_18/13.jpg';
+
+			  /*images[11] = 'image/URECKON_18/14.jpg';
+			  images[12] = 'image/URECKON_18/15.jpg';
+			  images[13] = 'image/URECKON_18/16.jpg';
+			  images[14] = 'image/URECKON_18/17.jpg';
+			  images[15] = 'image/URECKON_18/18.jpg';
+        images[16] = 'image/URECKON_18/19.jpg';
+        images[17] = 'image/URECKON_18/13.jpg';*/
 			// Change Image
-			function changeImg(){
-				document.slide.src = images[i];
-
-				if(i < images.length - 1){
+			function changeImg1(){
+				document.slide1.src = images1[i];
+        //document.slide2.src = images[i];
+				if(i < 10){
 					i++;
 				} else {
 					i = 0;
 				}
+      setTimeout("changeImg1()", time);
+    }
+    function changeImg2(){
+        document.slide2.src = images2[j];
+        if(j < 6){
+					j++;
+				} else {
+					 j = 0;
+				}
 
-				setTimeout("changeImg()", time);
+				setTimeout("changeImg2()", time);
 			}
 
-			window.onload = changeImg;
+		/*	window.onload = changeImg2;
+      window.onload = changeImg1; */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
 </script>
 </body>
 </html>
