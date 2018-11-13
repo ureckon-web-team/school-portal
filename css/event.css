@@ -3,8 +3,7 @@ body{
   width:99%;
   height: 100%;
   background-color: #bdbdbd;
-  scroll-behavior:smooth;
-}
+  }
 .content1 ,.content2 ,.content3
 {
   width:26%;
@@ -89,13 +88,12 @@ h1{
   }
   /* NAV BAR FOR SMALL SCREEN SIZE*/
   #bar{
-    font-size:50px;
+    font-size:40px;
     cursor:pointer;
     color: rgba(128, 237, 255, 1);
     position:fixed;
     right:10px;
-    margin-top:-15px;
-    visibility: hidden;
+    padding: 1%;
 
   }
   #bar:hover
@@ -139,7 +137,7 @@ h1{
   /*NAV BAR FOR LARGE SCREEN SIZE*/
   nav
   {
-    margin-top:0;
+    margin-top:-1%;
     margin-left:0;
     height: 12vh;
     width:99%;
@@ -254,7 +252,6 @@ h1{
      }
      #bar{
        visibility:visible;
-       color:white;
        padding:3%;
      }
         ul{
@@ -275,12 +272,12 @@ h1{
             }
             img{
               width:180px;
-              height:180px;
-              margin-top:-6vh;
+              height:200px;
+              margin-top:-10%;;
               margin-right:95%;
             }
             #bar{
-              font-size:50px;
+              font-size:30px;
               padding:4%;
             }
         }
@@ -297,12 +294,12 @@ h1{
           }
           img{
             width:220px;
-            height:220px;
-            padding-top:10px;
+            height:250px;
+            margin-top:-10%;
             margin-right:95%;
           }
           #bar{
-            font-size:50px;
+            font-size:30px;
             padding:3%;
           }
         }
@@ -321,12 +318,13 @@ h1{
            img{
              width:280px;
              height:280px;
-             padding-top:10px;
+             ptop:10px;
              margin-right:95%;
            }
            #bar{
              font-size:50px;
-             padding:3%;
+              margin-top: -3%;
+
            }
 
         }
@@ -345,8 +343,11 @@ h1{
              img{
                width:280px;
                height:280px;
-               padding-top:10px;
+               margin-top:-9%;
                margin-right:20%;
+             }
+             #bar{
+               margin-top: -3%;
              }
            }
         /* Extra large devices (large desktops, 1200px and up) */
@@ -371,7 +372,11 @@ h1{
              padding:10px;
             margin:0;
            }
-        }
+           #bar
+           {
+             margin-top: -3%;
+             }
+         }
 
         /* Ultra large devices (large desktops, 1400px and up) */
         @media (min-width: 1500px)
@@ -382,8 +387,8 @@ h1{
            }
            img{
              width:280px;
-             height:280px;
-              padding-top: -10px;
+             height:300px;
+              margin-top:-7%;;
              margin-right:20%;
              overflow: hidden;
            }
@@ -401,6 +406,6 @@ h1{
         {
           #bar{
             visibility: visible;
-            margin-top:-2%;
+            margin-top:-4%;
           }
         }

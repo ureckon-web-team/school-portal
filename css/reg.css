@@ -794,8 +794,8 @@ body
 {
    background-color: rgba(41, 10, 99, 1);
 }
-.back
+a
 {
-    margin-top:-8%;
-    float:right;
+  text-decoration:none;
+  color:white;
 }
