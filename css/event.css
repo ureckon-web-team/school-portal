@@ -1,3 +1,123 @@
+#id01 {font-family: Arial, Helvetica, sans-serif;}
+/* Full-width input fields */
+input[type=text]{
+    width: 60%;
+    padding: 12px 10px;
+    margin-top: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius:10px;
+    float:right;
+
+}
+input[type=text]:focus{
+
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 2px 5px #888888;
+    outline:none;
+    translate:5s;
+}
+#lebel
+{
+  color: #555;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 20px;
+  margin-top: 25px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius:10px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #ff4b5a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius:15px;
+    outline:none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    outline:none;
+}
+
+.container1 {
+    padding: 20px;
+}
+.container {
+    padding: 30px;
+    padding-top:10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 20px;
+}
+/* Radio button */
+.contain
+{
+    padding: 12px 20px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius-bottomleft:10px;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
 
 body{
   width:99%;
@@ -39,47 +159,23 @@ h1{
     text-decoration: underline;
     font-family:sans-serif;
 }
- .circle {
-   border-radius: 50%;
-   width: 60px;
-   height: 60px;
-   margin-top:0;
-   margin-left: 38%;
-   background-color:transparent;
+ .button
+ {
+   background-color: #ff4b5a;
+   color: white;
+   padding:5% 22% 5% 22%;
+   margin: 0 20% 0 20%;
+   border: none;
    cursor: pointer;
-   padding:0;
+   width: 60%;
+   height:5%;
+   border-radius:15px;
  }
-.circle:hover
+.button:hover
 {
-  background-color:rgba(41, 10, 99, 1);
-  -webkit-animation: rotation 2s infinite linear;
+     opacity:0.6;
+     color:black;
 }
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
-}
- .horizontal-plus {
-   position: relative;
-   background-color: rgba(128, 237, 255, 1);
-   width: 50%;
-   height: 12.5%;
-   left: 25%;
-   top: 43.75%;
- }
-
- .vertical-plus {
-   position: relative;
-   background-color: rgba(128, 237, 255, 1);
-   width: 12.5%;
-   height: 50%;
-   left: 43.75%;
-   top: 12.5%;
- }
-
   img{
     width:150px;
     height:150px;
@@ -234,6 +330,14 @@ h1{
     line-height: 5vh;
     font-family:cursive;
   }
+  #id02
+  {
+    visibility: hidden;
+    float:right;
+    margin-right:80px;
+    font-size: 12px;
+    padding-bottom:10px;
+  }
 /*Responsive view*/
 
   @media (max-width: 1300px)
@@ -263,7 +367,7 @@ h1{
         @media (min-width: 320px)
          {
            #content{
-             font-size: 13px;
+             font-size: 15px;
            }
             .circle
             {
@@ -280,6 +384,7 @@ h1{
               font-size:30px;
               padding:4%;
             }
+
         }
 
         /* Small devices (landscape phones, 576px and up) */

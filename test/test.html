@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/login_page.php">
+    <div class="container">
+            <label for="fname" id="lebel"><b>First Name :</b></label>
+               <input type="text" placeholder="Enter First Name" name="fname" required>
+                <br>
+            <label for="lname" id="lebel"><b>Last Name :</b></label>
+               <input type="text" placeholder="Enter Last Name" name="lname" required>
+                <br>
+            <label for="email" id="lebel"><b>E-mail :</b></label>
+              <input type="text" placeholder="Enter E-mail" name="email" required>
+                <br>
+           <label for="sname" id="lebel"><b>School Name :</b></label>
+              <input type="text" placeholder="Enter School Name" name="uname" required>
+
+          <label for="sname" id="lebel"><b>Grade :</b></label>
+                 <input type="text" placeholder="Enter Class" name="grade" required>
+          <label for="sname" id="lebel"><b>Phone Number :</b></label>
+                    <input type="text" placeholder="Enter Phone Number" name="mob" required>
+          <label for="sname" id="lebel"><b>Want to form team ? :</b></label>
+          <label class="contain">Yes
+              <input type="radio" checked="checked" name="radio">
+          </label>
+            <label class="contain">No
+              <input type="radio" name="radio">
+          </label>
+
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="submit" class="cancelbtn" style="float:right">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

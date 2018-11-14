@@ -17,7 +17,7 @@ function fixed() {
 		document.getElementById("side").style.visibility = "visible";
     } else {
         header.classList.remove("sticky");
-        header.innerHTML = "Ureckon Open School Challenge (UOSC)";
+        header.innerHTML = "URECKON Open School Challenge <br> (UOSC)";
         document.getElementById("main").style.visibility = "visible";
 		document.getElementById("side").style.visibility = "hidden";
     }
