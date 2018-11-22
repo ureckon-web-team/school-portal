@@ -38,15 +38,16 @@ button {
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: 1px solid white;
     cursor: pointer;
+	
     width: 100%;
     border-radius:15px;
     outline:none;
 }
 
 button:hover {
-    opacity: 0.8;
+    opacity: 0;
 }
 
 /* Extra styles for the cancel button */
@@ -145,13 +146,13 @@ body{
 .card{
     height:60%;
     margin-left: 5%;
-    background-color: #73008B;
+    background-color: #3B3C36;
     border:1px solid #bdbdbd;
     -webkit-border-radius: 5px;
     border-radius: 25px;
-    -moz-box-shadow: 0 0 20px #73008B;
-    -webkit-box-shadow: 0 0 20px #73008B;
-    box-shadow: 0 0 20px #73008B;
+    -moz-box-shadow: 0 0 20px #222222;
+    -webkit-box-shadow: 0 0 20px #222222;
+    box-shadow: 0 0 20px #222222;
 }
 h1{
   text-align: center;
@@ -161,11 +162,11 @@ h1{
 }
  .button
  {
-   background-color: #ff4b5a;
+   background-color: #2F78CF;
    color: white;
    padding:5% 22% 5% 22%;
    margin: 0 20% 0 20%;
-   border: none;
+   
    cursor: pointer;
    width: 60%;
    height:5%;
@@ -173,8 +174,11 @@ h1{
  }
 .button:hover
 {
-     opacity:0.6;
+    background:transparent;
      color:black;
+	 color:white;
+	 border: 2px solid white;
+	 transition:0.3s;
 }
   img{
     width:150px;

@@ -71,6 +71,7 @@ z-index:1;
     margin-left: 50px;
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 *, *:before, *:after{
   margin: 0;
@@ -82,13 +83,21 @@ z-index:1;
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
+  width: 200%;
+  max-width: 500px;
   margin-top: 10%;
   margin: 120px;
 }
-
+h1
+{
+	margin-left:40%;
+	position:absolute;
+	font-family: 'Roboto', sans-serif;
+	color:rgba(0, 167, 225, 1);
+	margin-top:5%;
+	font-size:50px;
+	text-decoration:underline;
+}
 .content .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
@@ -102,7 +111,7 @@ z-index:1;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .content:hover .content-overlay{
@@ -111,7 +120,7 @@ z-index:1;
 
 .content-image{
   width: 100%;
-  border-radius:10px;
+  border-radius:50%;
 }
 
 .content-details {
@@ -190,3 +199,51 @@ z-index:1;
  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 
 }
+@media screen and (max-width: 1300px)
+{
+	h1{
+		margin-top:8%;
+	}
+	.content-details h3{
+		letter-spacing: 0.15em;
+		font-size: 2em;
+	}
+	
+	.content
+	{
+		
+	width:300px;
+	height:300px;
+	}
+	.content-overlay
+	{
+		width:200px;
+		height:200px;
+	}
+}
+
+@media screen and (max-width: 1120px)
+{
+	h1{
+		margin-top:10%;
+	}
+	.content-details h3{
+		letter-spacing: 0.15em;
+		font-size: 2em;
+	}
+	
+	.content
+	{
+	margin-top:15%;
+	width:250px;
+	height:250px;
+	}
+	.content-overlay
+	{
+		width:200px;
+		height:200px;
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	PRIYOM HDJOP

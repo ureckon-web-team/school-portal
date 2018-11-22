@@ -121,7 +121,7 @@ body
   top:2%;
   position:fixed;
   z-index: 1;
-  background: transparent;
+  background: #240033;
   /* background: red; */
 }
 /*container*/
@@ -132,8 +132,6 @@ body
   display: block;
   width:60vw;
   height:55vh;
-  /* margin-top: 27%;
-  margin-left: 100px; */
   background-color: white;
 
   border-radius: 25px;
@@ -150,29 +148,6 @@ body
   display: flex;
   flex-direction: column;
 }
-#button{
-  cursor:pointer;
-  display: block;
-  margin-left:20%;
-  /* padding:10px 20px; */
-  width:50%;
-  padding: 9px 5px;
-  margin-top: -10px;
-  /* height:200px; */
-  border-radius: 10px;
-  color:#240033;
-  text-align: center;
-  background-color: cyan;
-  /* box-shadow: 2px 3px #888888; */
-  font-size:3vh;
-  font-family: 'Times New Roman', Times, serif;
-}
-#button:hover{
-  background-color: #1f5fe7;
-  color: #111;
-  font-weight: bold;
-}
-
 @media screen and (max-width: 1200px){
   .slide{
     left: 0%;

@@ -12,12 +12,13 @@ var sticky = header.offsetTop;
 function fixed() {
     if (window.pageYOffset >=sticky) {
         header.classList.add("sticky");
-        header.innerHTML = "UOSC <br>(11-12 Jan 2019)";
+		document.getElementById("header").style.visibility = "hidden";
         document.getElementById("main").style.visibility = "hidden";
 		document.getElementById("side").style.visibility = "visible";
+		
     } else {
         header.classList.remove("sticky");
-        header.innerHTML = "URECKON Open School Challenge <br> (UOSC)";
+        document.getElementById("header").style.visibility = "visible";
         document.getElementById("main").style.visibility = "visible";
 		document.getElementById("side").style.visibility = "hidden";
     }
